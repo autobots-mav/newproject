@@ -28,12 +28,12 @@ public static void main(String[] args) {
 		 System.out.println("");
 		 if (node.getNodeType() == Node.ELEMENT_NODE)
 		 {
-		    Element eElement = (Element) node;
-		    System.out.println("Staff ID :" +eElement.getAttribute("id"));
-		    System.out.println("First Name : "  + eElement.getElementsByTagName("firstname").item(0).getTextContent());
-		    System.out.println("Last Name : "   + eElement.getElementsByTagName("lastname").item(0).getTextContent());
-		    System.out.println("Nick Name : "    + eElement.getElementsByTagName("nickname").item(0).getTextContent());
-		    System.out.println("Salary : "    + eElement.getElementsByTagName("salary").item(0).getTextContent());
+		    Element ele = (Element) node;
+		    System.out.println("Staff ID :" +ele.getAttribute("id"));
+		    System.out.println("First Name : "  + ele.getElementsByTagName("firstname").item(0).getTextContent());
+		    System.out.println("Last Name : "   + ele.getElementsByTagName("lastname").item(0).getTextContent());
+		    System.out.println("Nick Name : "    + ele.getElementsByTagName("nickname").item(0).getTextContent());
+		    System.out.println("Salary : "    + ele.getElementsByTagName("salary").item(0).getTextContent());
 		 }
 		}
 	}
