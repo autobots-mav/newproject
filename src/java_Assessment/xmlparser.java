@@ -22,9 +22,9 @@ public static void main(String[] args) {
 		System.out.println("Root Element Name :"+root.getNodeName());
 		NodeList list = doc.getElementsByTagName("staff");
 		System.out.println("============================");
-		for (int temp = 0; temp < list.getLength(); temp++)
+		for (int i = 0; i < list.getLength(); i++)
 		{
-		 Node node = list.item(temp);
+		 Node node = list.item(i);
 		 System.out.println("");
 		 if (node.getNodeType() == Node.ELEMENT_NODE)
 		 {
